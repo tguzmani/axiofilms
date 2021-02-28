@@ -7,17 +7,17 @@ import Logo from '../../img/shield.png'
 const Navbar = () => {
   return (
     <nav>
-      <Link to='#'>Inicio</Link>
+      <Link to='/'>Inicio</Link>
 
-      <Link to='#'>Portafolio</Link>
+      <Link to='/portafolio'>Portafolio</Link>
 
-      <Link to='#'>
+      <Link to='/'>
         <img id='logo' src={Logo} />
       </Link>
 
-      <Link to='#'>Nosotros</Link>
+      <Link to='/nosotros'>Nosotros</Link>
 
-      <Link to='#'>Noticias</Link>
+      <Link to='/noticias'>Noticias</Link>
     </nav>
   )
 }

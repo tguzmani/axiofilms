@@ -6,10 +6,31 @@ $light-color: #ddd;
 * {
   margin: 0;
   padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
   list-style-type: none;
+}
+
+#about-us-picture > img {
+  width: 100%;
+}
+
+#about-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-us-text {
+  padding: 0 2em;
+  flex-grow: 10;
+}
+
+#about-us-text {
+  padding: 0 2em;
+  flex-grow: 10;
 }
 
 nav {
@@ -87,6 +108,31 @@ nav > a {
   max-width: 1024px;
   margin: 0 auto;
   padding: 3em 1em;
+
+  &-big {
+    width: 1240px;
+  }
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.container-big {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3em 1em;
+}
+
+.new {
+  margin: 2em 0;
+  margin-bottom: 3em;
+}
+
+.new-date {
+  color: rgb(75, 75, 75);
+  font-size: 0.9em;
+  margin-top: 1em;
 }
 
 #logo {
@@ -188,8 +234,31 @@ h1 {
   padding: 2.5em;
 }
 
-.mb-3 {
+.new-picture {
+  max-height: 440px;
+  overflow: hidden;
   margin-bottom: 1em;
+}
+
+.new-picture > img {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: -200px;
+}
+
+.mb {
+  &-2 {
+    margin-bottom: 0.75em;
+  }
+
+  &-3 {
+    margin-bottom: 1em;
+  }
+}
+
+.pt-nav {
+  padding-top: calc(80px + 2em);
 }
 
 .step-description {
@@ -213,6 +282,7 @@ h1 {
 }
 
 .btn {
+  cursor: pointer;
   &-primary {
     background-color: $primary-color;
     color: $light-color;
@@ -232,4 +302,54 @@ h1 {
       color: $light-color;
     }
   }
+}
+
+#whatsapp-button {
+  color: $light-color;
+  background-color: #128c7e;
+  position: fixed;
+  top: auto;
+  bottom: 1.5em;
+  right: 1.5em;
+  left: auto;
+  width: 4em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+  box-shadow: 2px 2px 3px rgba(10, 10, 10, 0.3);
+  transition: all 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.video-item {
+  margin: 1em;
+
+  &-player {
+    margin-top: 1em;
+  }
+}
+
+.video-text {
+  &-primary {
+    font-size: 1.5em;
+  }
+
+  &-secondary {
+    color: darkgray;
+  }
+}
+
+.category-button {
+  margin-top: 2em;
 }
