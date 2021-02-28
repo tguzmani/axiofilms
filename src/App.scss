@@ -235,9 +235,10 @@ h1 {
 }
 
 .new-picture {
-  max-height: 440px;
+  height: 440px;
   overflow: hidden;
   margin-bottom: 1em;
+  background-color: lightgray;
 }
 
 .new-picture > img {
